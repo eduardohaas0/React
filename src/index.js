@@ -13,6 +13,7 @@ const App = () => {
       <Banner />
       <main className="container">
         <section className="products-container">
+          Abobrinha 123
           <ProductCard />
         </section>
       </main>
