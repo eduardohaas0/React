@@ -1,25 +1,11 @@
-import "./css/style.css";
-import React from "react";
-import Header from "./components/Header";
-import Banner from "./components/Banner";
-import ProductCard from "./components/ProductCard";
-import Footer from "./components/Footer";
-import "./css/style.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './css/index.css';
+import App from './app.js';
 
-const App = () => {
-  return (
-    <div className="container">
-      <Header />
-      <Banner />
-      <main className="container">
-        <section className="products-container">
-          Abobrinha 123
-          <ProductCard />
-        </section>
-      </main>
-      <Footer />
-    </div>
-  );
-};
-
-export default App;
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
