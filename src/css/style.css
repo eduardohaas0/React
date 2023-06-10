@@ -144,6 +144,8 @@ nav {
 	font-weight: bold;
   }
   
+ 
+
   .btn {
 	display: block;
 	width: 100%;
@@ -158,6 +160,7 @@ nav {
   }
   
   .btn:hover {
+	scale: 1.1;
 	background-color: #0f642f;
   }
   
