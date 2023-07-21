@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,11 +15,17 @@ const Carousel = ({ images }) => {
 
   return (
     <div className="carousel">
-      <button className="carousel__button carousel__button--prev" onClick={goToPreviousSlide}>
+      <button
+        className="carousel__button carousel__button--prev"
+        onClick={goToPreviousSlide}
+      >
         voltar
       </button>
-      <img className="carousel__image" src={images[currentIndex]} alt="Carousel Slide" />
-      <button className="carousel__button carousel__button--next" onClick={goToNextSlide}>
+      <img src={images[currentIndex]} alt="Carousel Slide" />
+      <button
+        className="carousel__button carousel__button--next"
+        onClick={goToNextSlide}
+      >
         proxima
       </button>
     </div>
